@@ -20,6 +20,8 @@ boxplot(filtered_data$`CO2 Emissions(g/km)` ~ filtered_data$Make,
         ylab = "CO2 Emissions (g/km)",
         outline = TRUE, 
         border = "black")
+# Test and PVALUE
+
 t_test_result <- t.test(`CO2 Emissions(g/km)` ~ Make, data = filtered_data)
 p_value <- t_test_result$p.value
 print(p_value)
