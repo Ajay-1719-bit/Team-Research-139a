@@ -25,3 +25,12 @@ boxplot(filtered_data$`CO2 Emissions(g/km)` ~ filtered_data$Make,
 t_test_result <- t.test(`CO2 Emissions(g/km)` ~ Make, data = filtered_data)
 p_value <- t_test_result$p.value
 print(p_value)
+
+# Shapiro-Wilk Test for Normality
+
+shapiro_test_result <- shapiro.test(filtered_data$`CO2 Emissions(g/km)`)
+print(shapiro_test_result)
+
+
+
+
