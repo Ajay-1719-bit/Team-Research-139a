@@ -31,6 +31,11 @@ print(p_value)
 shapiro_test_result <- shapiro.test(filtered_data$`CO2 Emissions(g/km)`)
 print(shapiro_test_result)
 
+# Wilcox test
+
+wilcoxon_result <- wilcox.test(`CO2 Emissions(g/km)` ~ Make, data = filtered_data, exact = FALSE)
+print(wilcoxon_result)
+
 
 
 
