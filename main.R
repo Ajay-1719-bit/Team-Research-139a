@@ -1,3 +1,6 @@
+library(readr)
+CO2_Emissions_Canada <- read_csv("CO2 Emissions_Canada.csv")
+
 filtered_data <- subset(CO2_Emissions_Canada, Make == "AUDI" | Make == "BMW")
 
 # Histogram
