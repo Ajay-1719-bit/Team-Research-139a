@@ -15,6 +15,8 @@ curve(dnorm(x, mean = mean_co2, sd = sd_co2) * length(filtered_data$`CO2 Emissio
         lwd = 2, 
         add = TRUE)
 
+
+
 # Boxplot
 boxplot(filtered_data$`CO2 Emissions(g/km)` ~ filtered_data$Make,
         col = c("lightblue", "lightgreen"),
